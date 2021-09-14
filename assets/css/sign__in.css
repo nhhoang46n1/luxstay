@@ -1,0 +1,327 @@
+.app__sign-in {
+    height: 300vh;
+}
+
+.sign__banner {
+    height: 168px;
+    width: 100%;
+    background-color: red;
+    background-image: linear-gradient(to right, #c2e59c, #64b3f4);
+}
+
+.sign__banner-text {
+    display: flex;
+    flex-direction: column;
+    padding: 56px 0 56px 112px;
+}
+
+.sign__banner-heading {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-weight: 700;
+    padding-bottom: 24px;
+}
+
+.sign__banner-desc {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.header-item_account {
+    font-size: 1.4rem;
+    padding: 0 16px;
+}
+
+.header-item_account:hover {
+    cursor: pointer;
+    color: #64b3f4;
+}
+
+
+/* benefits */
+
+.sign__container .grid__row {
+    padding: 40px 0;
+    height: 700px;
+}
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits--img1 {
+    width: 65px;
+    height: 70px;
+}
+
+.benefits--img2 {
+    width: 60px;
+    height: 70px;
+}
+
+.benefits--img4,
+.benefits--img3 {
+    width: 55px;
+    height: 70px;
+}
+
+.benefits--heading {
+    padding: 24px 0;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.benefits--desc {
+    font-size: 1.6rem;
+    color: rgb(98, 98, 98);
+    font-weight: 400;
+    padding-bottom: 46px;
+}
+
+
+/* sign in */
+
+.account {
+    position: absolute;
+    width: 420px;
+    min-height: 600px;
+    background-color: var(--white-color);
+    top: -155px;
+    right: 10px;
+    padding: 32px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+.account--heading {
+    font-size: 2.4rem;
+    color: var(--text-color);
+    font-weight: 700;
+    padding-bottom: 36px;
+}
+
+.account--desc {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 500;
+    padding-bottom: 28px;
+}
+
+.account--form {
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    margin-bottom: 28px;
+    outline: none;
+    /* overflow: hidden; */
+}
+
+.account--form input::placeholder {
+    font-size: 1.4rem;
+}
+
+.account--phone-number,
+.account--password,
+.account--email {
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 16px 12px 16px 24px;
+    flex: 1;
+    position: relative;
+    /* border-radius: 24px; */
+}
+
+.account--form--password-icon,
+.account--form--email-icon {
+    font-size: 1.8rem;
+    position: absolute;
+    right: 57px;
+}
+
+.account--form input:focus {
+    border-image: linear-gradient(45deg, #c2e59c, #64b3f4) 10;
+    box-shadow: 0 0 0 1.5px rgba(0, 0, 0, 0.1);
+    /* border-radius: 24px;
+    border: 1px solid transparent;
+    background: linear-gradient(45deg, red, blue) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude; */
+}
+
+.account--password {}
+
+.account--link {
+    color: #64b3f4;
+    opacity: 1;
+}
+
+.account--link:hover {
+    color: #64b3f4;
+    opacity: 0.7;
+}
+
+.account--btn {
+    display: block;
+    padding: 16px;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    margin-bottom: 16px;
+    background-size: 200% auto;
+    background-image: linear-gradient( to right, #c2e59c 0%, #64b3f4 51%, #c2e59c 100%);
+    transition: 0.5s;
+}
+
+.account--btn:hover {
+    cursor: pointer;
+    background-position: right center;
+}
+
+.account--lists {
+    list-style: none;
+    text-align: center;
+}
+
+.account--item {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 8px;
+    line-height: 2rem;
+}
+
+.account--item-btn {
+    border: 1px solid #ccc;
+    margin: 8px 0;
+    border-radius: 3px;
+}
+
+.account--item-btn:hover {
+    cursor: pointer;
+}
+
+.account--item-btn-gg,
+.account--item-btn-fb {
+    margin-right: 12px;
+    float: right;
+    font-size: 2rem;
+    /* border: 1px solid #ccc;
+    padding: 1px; */
+}
+
+.account--item-btn:hover {
+    cursor: pointer;
+    color: #64b3f4;
+    border-image: linear-gradient(45deg, #c2e59c, #64b3f4) 10;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.account--item-btn-fb {
+    background: -webkit-gradient( linear, right top, left bottom, from(rgb(37, 0, 248)), to(rgb(2, 27, 255)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.account--item-btn-gg {
+    background: -webkit-linear-gradient(red 35%, yellow 37%, green, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.currency-more-account {
+    font-size: 1.4rem;
+    padding: 0 6px 0 60px;
+    color: var(--text-color);
+    font-weight: 350;
+}
+
+.currency-more-account:hover {
+    cursor: pointer;
+    color: #64b3f4;
+}
+
+
+/* sign up */
+
+.sign__in-active {
+    position: relative;
+}
+
+.sign__in-active.sign__in-active-disable {
+    display: none;
+}
+
+.sign__up-active {
+    position: relative;
+}
+
+.sign__up-active.sign__up-active-disable {
+    display: none;
+}
+
+.sign-up__account-heading {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 600;
+    padding-bottom: 8px;
+    opacity: 1;
+}
+
+.phone-number-area {
+    padding: 16px 12px 16px 24px;
+    border: 1px solid #ccc;
+    border-right: none;
+    display: flex;
+    background-color: #fff;
+}
+
+.phone-number-area:hover {
+    cursor: pointer;
+    opacity: 0.85;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    /* border-image: linear-gradient(45deg, #c2e59c, #64b3f4) 10;
+    box-shadow: 0 0 0 1.5px rgba(0, 0, 0, 0.1); */
+}
+
+.phone-number-area-code {
+    padding: 0 4px;
+}
+
+.phone-number-area-icon {
+    width: 21px;
+    height: 16px;
+}
+
+.phone-number-area i {
+    position: relative;
+    top: -2px;
+}
+
+.account--phone-numbe {
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 16px 12px 16px 24px;
+    flex: 1;
+    position: relative;
+    /* border-radius: 24px; */
+}
+
+.account--form__sign-up {
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    margin-bottom: 20px;
+    outline: none;
+    /* overflow: hidden; */
+}
